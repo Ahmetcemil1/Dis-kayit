@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Paneli</title>
+  <link rel="stylesheet" href="../css/admin.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Admin Giriş</h2>
+    <form id="admin-login-form">
+      <input type="password" id="admin-password" placeholder="Şifre" required />
+      <button type="submit">Giriş Yap</button>
+    </form>
+
+    <div id="admin-panel" style="display:none;">
+      <h3>Öğrenciler</h3>
+      <ul id="student-list"></ul>
+
+      <h3>Hastalar</h3>
+      <ul id="patient-list"></ul>
+
+      <!-- Eşleştirme alanı -->
+      <h3>Eşleştirme</h3>
+      <form id="match-form">
+        <input type="text" id="studentId" placeholder="Öğrenci ID" required />
+        <input type="text" id="patientId" placeholder="Hasta ID" required />
+        <button type="submit">Eşleştir</button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="../client/pages/AdminPage.js"></script>
+</body>
+</html>

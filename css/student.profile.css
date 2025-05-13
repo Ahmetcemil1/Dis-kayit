@@ -1,0 +1,62 @@
+.student-profile {
+    background: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-header h2 {
+    font-size: 1.8em;
+    color: #0077cc;
+    margin-bottom: 10px;
+}
+
+.short-bio {
+    font-style: italic;
+    color: #555;
+}
+
+.profile-details p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.profile-details strong {
+    color: #0077cc;
+}
+
+/* === Mobil Uyumlu Ayarlar === */
+@media (max-width: 600px) {
+    .student-profile {
+        padding: 30px 15px;
+        margin: 15px;
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-header h2 {
+        font-size: 1.5em;
+    }
+
+    .profile-details p {
+        font-size: 1em;
+    }
+}
